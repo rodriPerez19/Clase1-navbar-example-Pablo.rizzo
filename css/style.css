@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
 }
 html{
+    font-size: 15px;
     scroll-behavior: smooth;
+}
+
+body{
+    background: rgb(40, 106, 119);
 }
 
 nav{
@@ -13,14 +21,12 @@ nav{
     background-color: antiquewhite;
     background: linear-gradient(90deg,#fff ,#000);
 }
-body{
-    background-image: url('../img/background.jpg');
-}
+
 .container__logo{   
     padding: 5px;
 }
+
 ul{
-    
     list-style-type: none;
     display: flex;
     margin: 5px;
@@ -29,9 +35,11 @@ ul li{
     padding: 5px;
     color: #fff;
 }
+
 ul a{
     text-decoration: none;
 }
+
 .container__content{
     
     display: flex;
@@ -53,4 +61,161 @@ ul a{
     flex-direction: column;
     padding: 10px;
     color: #fff;
+}
+
+.container-home{
+    height: 100vh;
+    background-image: url(../img/resto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    color: goldenrod;
+    font-size: 3rem;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    padding: 25px 0 0 0;
+}
+
+.container-home p{
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    width: 60%;
+    margin: 150px 0 0 0;
+}
+
+.container-about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #000;
+}
+
+.container-about img{
+    padding: 50px;
+    width: 50%;
+}
+
+.container-about p{
+    width: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+.container-proyect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 2px solid #000;
+    padding: 0 0 50px 0;
+}
+
+.container-proyect h2{
+    color: goldenrod;
+    font-size: 3rem;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    margin: 70px 0 40px 0;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-item{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    border: 2px solid #000;
+    border-radius: 0.5rem;
+}
+
+.card-item img{
+    width: 100%;
+    height: 50%;
+}
+
+.card-item h2{
+    color: goldenrod;
+    font-size: 3rem;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    margin: 0 0 20px 0;
+}
+
+.card-item p{
+    color: #fff;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    text-align: center;
+    padding: 5px;
+}
+
+.container-contact{
+    height: 70vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-contact h2{
+    color: goldenrod;
+    font-size: 3rem;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    margin: 0 0 20px 0;
+}
+
+.container-contact form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 60%;
+}
+
+.container-contact form label{
+    font-size: 2rem;
+}
+
+form input{
+    width: 100%;
+    height: 25px;
+}
+
+form button{
+    margin: 10px 0 0 0;
+    width: 100%;
+    height: 20px;
+}
+
+.container-footer{
+    background: rgba(0, 0, 0, 0.7);
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-footer a{
+    text-decoration: none;
+    color: skyblue;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+i{
+    color: skyblue;
+    padding: 0 10px 0 0;
 }
